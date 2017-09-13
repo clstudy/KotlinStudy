@@ -9,9 +9,8 @@ import kotlin.properties.Delegates
  */
 
 class User {
-    var name: String by Delegates.observable("no name") {
-        d, old, new ->
-        println("$old - $new")
+    var name: String by Delegates.observable("no name") { d, old, new ->
+        println("d is '$d', old is '$old',new is '$new'")
     }
 }
 

@@ -18,9 +18,14 @@ fun main(args: Array<String>) {
     println(strings.filter(oddLength))
 }
 
-private fun isOdd(x: Int) = x % 2 != 0
+private fun isOdd(x: Int) = x % 2 != 0  //判断是奇数
 fun length(s: String) = s.length
 
 fun <A, B, C> compose(f: (B) -> C, g: (A) -> B): (A) -> C {
     return { x -> f(g(x)) }
 }
+
+/*
+compose：  (A)-> B ^ (B) -> C  = C
+           oddLength = isOdd(length(s))
+ */

@@ -18,7 +18,22 @@ fun main(args: Array<String>) {
     //虽然经过了装箱，但是值是相等的，都是100
     println(boxedA === anotherBoxedA) //  true，值相等，128 之前对象地址一样
     println(boxedA == anotherBoxedA) // true，值相等
+test13(object :MyFun<String,String>{
+    override fun inParam(t: String) {
+        println("inParam")
+    }
 
+    override fun outValue(): String {
+        println("outValue")
+        return  "outValue"
+    }
+
+    override fun testp(t: String): String {
+        println("testp")
+        return  "testp"
+    }
+
+})
 }
 
 /*

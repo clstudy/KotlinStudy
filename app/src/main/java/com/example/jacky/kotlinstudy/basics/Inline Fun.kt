@@ -25,6 +25,7 @@ fun foo() {
     print("foo exec")
 }
 
+//---------------------------------------------------------
 /**
  * 调用Iterable<T>的forEach函数
  */
@@ -36,9 +37,42 @@ fun hasZeros(ints: List<Int>): Boolean {
 }
 
 
+/**
+ * crossinline
+ */
+inline fun f(crossinline body: () -> Unit) {
+    val f = object: Runnable {
+        override fun run() = body()
+    }
+    // ……
+}
+
+/**
+ * 禁用内联noinline
+ */
+inline fun foo(inlined: () -> Unit, noinline notInlined: () -> Unit) {
+    // ……
+}
 
 
+/**
+ * reified
+ */
+//fun <T> TreeNode.findParentOfType(clazz: Class<T>): T? {
+//    var p = parent
+//    while (p != null && !clazz.isInstance(p)) {
+//        p = p.parent
+//    }
+//    @Suppress("UNCHECKED_CAST")
+//    return p as T?
+//}
+//
+//inline fun <reified T> TreeNode.findParentOfType(): T? {
+//    var p = parent
+//    while (p != null && p !is T) {
+//        p = p.parent
+//    }
+//    return p as T?
+//}
 
-
-
-
+inline fun <reified T> membersOf() = T::class.members

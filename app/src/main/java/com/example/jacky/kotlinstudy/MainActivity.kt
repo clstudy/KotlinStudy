@@ -1,15 +1,15 @@
 package com.example.jacky.kotlinstudy
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.experimental.delay
 import one.hundred.experimental.*
+import one.hundred.experimental.ui.JobLifecycleActivity
 import one.hundred.experimental.ui.onClickStart
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : JobLifecycleActivity() {
     private var count = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {

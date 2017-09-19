@@ -1,8 +1,4 @@
-package com.example.jacky.kotlinstudy.coroutines
-
-
-import com.example.jacky.kotlinstudy.coroutines.ui.UI
-import kotlinx.coroutines.experimental.*
+package com.example.jacky.kotlinstudy.ui.corooutine
 
 
 /**

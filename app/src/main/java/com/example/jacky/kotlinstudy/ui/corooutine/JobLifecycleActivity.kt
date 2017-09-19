@@ -1,4 +1,4 @@
-package com.example.jacky.kotlinstudy.coroutines.ui
+package com.example.jacky.kotlinstudy.ui.corooutine
 
 import android.support.v7.app.AppCompatActivity
 import kotlinx.coroutines.experimental.Job

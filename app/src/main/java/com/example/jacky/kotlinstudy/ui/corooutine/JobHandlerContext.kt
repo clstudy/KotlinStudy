@@ -1,4 +1,4 @@
-package com.example.jacky.kotlinstudy.coroutines.ui
+package com.example.jacky.kotlinstudy.ui.corooutine
 
 /*
  * Copyright 2016-2017 JetBrains s.r.o.

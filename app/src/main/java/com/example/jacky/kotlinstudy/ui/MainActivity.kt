@@ -1,11 +1,10 @@
-package com.example.jacky.kotlinstudy
+package com.example.jacky.kotlinstudy.ui
 
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import com.example.jacky.kotlinstudy.coroutines.*
-import com.example.jacky.kotlinstudy.coroutines.ui.JobLifecycleActivity
-import com.example.jacky.kotlinstudy.coroutines.ui.onClickStart
+import com.example.jacky.kotlinstudy.R
+import com.example.jacky.kotlinstudy.ui.corooutine.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.experimental.delay
 

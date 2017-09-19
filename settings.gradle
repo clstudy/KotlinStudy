@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':coroutine_ext_library'

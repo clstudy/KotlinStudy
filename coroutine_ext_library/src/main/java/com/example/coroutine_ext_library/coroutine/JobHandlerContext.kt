@@ -1,4 +1,4 @@
-package com.example.jacky.kotlinstudy.ui.corooutine
+package com.example.coroutine_ext_library.coroutine
 
 /*
  * Copyright 2016-2017 JetBrains s.r.o.
@@ -18,12 +18,10 @@ package com.example.jacky.kotlinstudy.ui.corooutine
 
 import android.os.Handler
 import android.os.Looper
-import kotlinx.coroutines.experimental.CancellableContinuation
-import kotlinx.coroutines.experimental.CoroutineDispatcher
-import kotlinx.coroutines.experimental.Delay
-import kotlinx.coroutines.experimental.DisposableHandle
+import kotlinx.coroutines.experimental.*
 import java.util.concurrent.TimeUnit
 import kotlin.coroutines.experimental.CoroutineContext
+
 
 /**
  * 将执行调度到Android主UI线程上，并提供本机[延迟] [Delay.delay]支持。

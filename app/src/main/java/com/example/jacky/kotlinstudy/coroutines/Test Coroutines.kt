@@ -1,6 +1,5 @@
 package com.example.jacky.kotlinstudy.coroutines
 
-import android.util.Log
 import kotlin.coroutines.experimental.*
 
 /**
@@ -26,7 +25,7 @@ fun main(args: Array<String>) {
 }
 
 fun log(s: String) {
-    Log.d("tag", s)
+    println("test coroutines tag = $s")
 }
 
 /**

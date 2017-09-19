@@ -28,7 +28,6 @@ fun main(args: Array<String>) {
         log("in coroutine. After suspend. result = $result")
         executor.shutdown()
     }
-    ContinuationInterceptor
     log("after coroutine")
     //加这句的原因是防止程序在协程运行完之前停止
     MyThreadPool.pool.awaitTermination(10000, TimeUnit.MILLISECONDS)

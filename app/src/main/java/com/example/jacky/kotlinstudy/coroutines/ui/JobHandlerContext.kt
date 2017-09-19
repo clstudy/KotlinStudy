@@ -1,3 +1,5 @@
+package com.example.jacky.kotlinstudy.coroutines.ui
+
 /*
  * Copyright 2016-2017 JetBrains s.r.o.
  *

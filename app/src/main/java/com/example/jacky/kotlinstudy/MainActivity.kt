@@ -3,11 +3,11 @@ package com.example.jacky.kotlinstudy
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import com.example.jacky.kotlinstudy.coroutines.*
+import com.example.jacky.kotlinstudy.coroutines.ui.JobLifecycleActivity
+import com.example.jacky.kotlinstudy.coroutines.ui.onClickStart
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.experimental.delay
-import one.hundred.experimental.*
-import one.hundred.experimental.ui.JobLifecycleActivity
-import one.hundred.experimental.ui.onClickStart
 
 class MainActivity : JobLifecycleActivity() {
     private var count = 0

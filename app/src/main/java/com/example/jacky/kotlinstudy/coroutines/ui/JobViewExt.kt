@@ -1,6 +1,6 @@
-package one.hundred.experimental.ui
+package com.example.jacky.kotlinstudy.coroutines.ui
 
-import UI
+
 import android.view.View
 import kotlinx.coroutines.experimental.Job
 import kotlinx.coroutines.experimental.NonCancellable

@@ -1,6 +1,7 @@
-package one.hundred.experimental
+package com.example.jacky.kotlinstudy.coroutines
 
-import UI
+
+import com.example.jacky.kotlinstudy.coroutines.ui.UI
 import kotlinx.coroutines.experimental.*
 
 
